@@ -8,7 +8,9 @@
 
 import UIKit
 
+#if !COCOAPODS
 import yoga
+#endif
 
 extension Flex {
     func valueOrUndefined(_ value: CGFloat?) -> YGValue {

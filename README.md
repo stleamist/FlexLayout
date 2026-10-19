@@ -1128,6 +1128,14 @@ If you find FlexLayout interesting, thanks to **Star** it. You'll be able to ret
 
 If you'd like to contribute, you're welcome!
 
+Before building the CocoaPods sample or running the workspace tests, initialize the pinned Yoga source:
+
+```bash
+git submodule update --init --recursive
+```
+
+FlexLayout uses the same Yoga commit for Swift Package Manager, the Xcode project, and CocoaPods. CocoaPods compiles the unmodified source in `ThirdParty/yoga`; it does not require a separate Yoga pod release. When updating Yoga, update the submodule, the revision in `Package.swift` and `FlexLayout.xcodeproj/project.pbxproj`, and `Package.resolved` together. CI checks that the source revisions match. Yoga's MIT license is retained at `ThirdParty/yoga/LICENSE`.
+
 <br>
 
 <a name="installation"></a>
@@ -1141,7 +1149,7 @@ To integrate FlexLayout into your Xcode project using CocoaPods, specify it in y
   pod 'FlexLayout'
 ```
 
-Then, run `pod install`.
+Then, run `pod install`. For a published version, CocoaPods downloads the pinned Yoga submodule automatically. If you install FlexLayout directly from Git, include `:submodules => true` in the Podfile declaration. For a local `:path` dependency, initialize the submodule first using the command in the contributing section.
 
 
 ### Carthage
@@ -1156,7 +1164,6 @@ github "layoutBox/FlexLayout"
 2. Run the following commands to resolve dependencies and build:
 ```bash
 carthage update --no-build
-(cd ./Carthage/Checkouts/FlexLayout && pod install)
 carthage build --use-xcframeworks
 ```
 

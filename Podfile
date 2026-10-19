@@ -4,10 +4,6 @@ platform :ios, '13.4'
 
 workspace 'FlexLayout.xcworkspace'
 
-target 'FlexLayout' do
-  pod 'Yoga'
-end
-
 target 'FlexLayoutTests' do
   project 'FlexLayout.xcodeproj'
   pod 'FlexLayout', path: './'

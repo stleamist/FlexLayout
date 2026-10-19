@@ -13,6 +13,7 @@
 		24AE97411FEAF30A00995987 /* UIView+FlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE97321FEAF30A00995987 /* UIView+FlexLayout.swift */; };
 		24AE97421FEAF30A00995987 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE97331FEAF30A00995987 /* Percent.swift */; };
 		24AE974A1FEAF30A00995987 /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE973D1FEAF30A00995987 /* YGLayoutExtensions.swift */; };
+		533471084EBE3CF1D74B06AC /* GapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80EAE8B4DD73C86FE316B34 /* GapTests.swift */; };
 		711F2EE72ACC727000DDDD67 /* WidthSizeContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F2EE12ACC727000DDDD67 /* WidthSizeContentTests.swift */; };
 		711F2EE82ACC727000DDDD67 /* PaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F2EE22ACC727000DDDD67 /* PaddingTests.swift */; };
 		711F2EE92ACC727000DDDD67 /* FlexLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F2EE32ACC727000DDDD67 /* FlexLayoutTests.swift */; };
@@ -25,19 +26,9 @@
 		71A5522F2CEAED47005D9FBF /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 715C617E2ABEE4B600D5A2E0 /* YGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71A552302CEAED47005D9FBF /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 715C617D2ABEE4B600D5A2E0 /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71A552312CEAEDC1005D9FBF /* FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AE97351FEAF30A00995987 /* FlexLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9421472A1695AFD38FAEBD72 /* Pods_FlexLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F893AE16F96F495E91B6D58 /* Pods_FlexLayout.framework */; };
+		ADBB8F9EE1BB62F7D53E7DA4 /* yoga in Frameworks */ = {isa = PBXBuildFile; productRef = B051DA4A088C49AD5BDE3C70 /* yoga */; };
 		EF5445402C1D607100BF4A33 /* InsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54453F2C1D607100BF4A33 /* InsetTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24DA37651EF843C500D1AB2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24DA37511EF843C500D1AB2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24DA37591EF843C500D1AB2F;
-			remoteInfo = FlexLayout;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		24DAEB9A1FCB9B0A00066520 /* CopyFiles */ = {
@@ -53,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		1F69C581A2C68BBBD1B64F21 /* Pods_FlexLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		224171C69665A229D0A217EF /* Pods-FlexLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayout.debug.xcconfig"; path = "Target Support Files/Pods-FlexLayout/Pods-FlexLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		2491CC5C1FCB931F00F3A61C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		2491CC5E1FCB932B00F3A61C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		24AE972E1FEAF30A00995987 /* FlexLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexLayout.swift; sourceTree = "<group>"; };
@@ -67,8 +57,6 @@
 		24DA37631EF843C500D1AB2F /* FlexLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B210ECFE9D7665DACB8E8A7 /* Pods-FlexLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayoutTests.debug.xcconfig"; path = "Target Support Files/Pods-FlexLayoutTests/Pods-FlexLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38E690AA4AF8EDFC95DB6626 /* Pods-FlexLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayoutTests.release.xcconfig"; path = "Target Support Files/Pods-FlexLayoutTests/Pods-FlexLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
-		3F893AE16F96F495E91B6D58 /* Pods_FlexLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B9A88E410DD5E3EA6C308DD /* Pods-FlexLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLayout.release.xcconfig"; path = "Target Support Files/Pods-FlexLayout/Pods-FlexLayout.release.xcconfig"; sourceTree = "<group>"; };
 		711F2EE12ACC727000DDDD67 /* WidthSizeContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidthSizeContentTests.swift; sourceTree = "<group>"; };
 		711F2EE22ACC727000DDDD67 /* PaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTests.swift; sourceTree = "<group>"; };
 		711F2EE32ACC727000DDDD67 /* FlexLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexLayoutTests.swift; sourceTree = "<group>"; };
@@ -79,6 +67,7 @@
 		715C617E2ABEE4B600D5A2E0 /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLayout.h; sourceTree = "<group>"; };
 		715C617F2ABEE4B600D5A2E0 /* UIView+Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Yoga.h"; sourceTree = "<group>"; };
 		715C61802ABEE4B600D5A2E0 /* YGLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = YGLayout.mm; sourceTree = "<group>"; tabWidth = 2; };
+		C80EAE8B4DD73C86FE316B34 /* GapTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GapTests.swift; sourceTree = "<group>"; };
 		EF54453F2C1D607100BF4A33 /* InsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9421472A1695AFD38FAEBD72 /* Pods_FlexLayout.framework in Frameworks */,
+				ADBB8F9EE1BB62F7D53E7DA4 /* yoga in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +96,6 @@
 			children = (
 				2B210ECFE9D7665DACB8E8A7 /* Pods-FlexLayoutTests.debug.xcconfig */,
 				38E690AA4AF8EDFC95DB6626 /* Pods-FlexLayoutTests.release.xcconfig */,
-				224171C69665A229D0A217EF /* Pods-FlexLayout.debug.xcconfig */,
-				6B9A88E410DD5E3EA6C308DD /* Pods-FlexLayout.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -169,6 +156,7 @@
 				711F2EE42ACC727000DDDD67 /* MarginTests.swift */,
 				711F2EE52ACC727000DDDD67 /* JustifyContentTests.swift */,
 				EF54453F2C1D607100BF4A33 /* InsetTests.swift */,
+				C80EAE8B4DD73C86FE316B34 /* GapTests.swift */,
 			);
 			path = FlexLayoutTests;
 			sourceTree = "<group>";
@@ -215,7 +203,6 @@
 				2491CC5E1FCB932B00F3A61C /* Quick.framework */,
 				2491CC5C1FCB931F00F3A61C /* Nimble.framework */,
 				1F69C581A2C68BBBD1B64F21 /* Pods_FlexLayoutTests.framework */,
-				3F893AE16F96F495E91B6D58 /* Pods_FlexLayout.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,7 +240,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24DA376E1EF843C500D1AB2F /* Build configuration list for PBXNativeTarget "FlexLayout" */;
 			buildPhases = (
-				296ABF4DC2205E5C45A6CE32 /* [CP] Check Pods Manifest.lock */,
 				24DA37551EF843C500D1AB2F /* Sources */,
 				24DA37561EF843C500D1AB2F /* Frameworks */,
 				24DA37571EF843C500D1AB2F /* Headers */,
@@ -265,6 +251,9 @@
 			dependencies = (
 			);
 			name = FlexLayout;
+			packageProductDependencies = (
+				B051DA4A088C49AD5BDE3C70 /* yoga */,
+			);
 			productName = FlexLayout;
 			productReference = 24DA375A1EF843C500D1AB2F /* FlexLayout.framework */;
 			productType = "com.apple.product-type.framework";
@@ -280,7 +269,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				24DA37661EF843C500D1AB2F /* PBXTargetDependency */,
 			);
 			name = FlexLayoutTests;
 			productName = FlexLayoutTests;
@@ -319,6 +307,9 @@
 				Base,
 			);
 			mainGroup = 24DA37501EF843C500D1AB2F;
+			packageReferences = (
+				1FC4218E9B7D981F65040348 /* XCRemoteSwiftPackageReference "yoga" */,
+			);
 			productRefGroup = 24DA375B1EF843C500D1AB2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,28 +331,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		296ABF4DC2205E5C45A6CE32 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlexLayout-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		780CC5362B9779C60FF80C2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,18 +381,11 @@
 				711F2EEB2ACC727000DDDD67 /* JustifyContentTests.swift in Sources */,
 				EF5445402C1D607100BF4A33 /* InsetTests.swift in Sources */,
 				711F2EE72ACC727000DDDD67 /* WidthSizeContentTests.swift in Sources */,
+				533471084EBE3CF1D74B06AC /* GapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24DA37661EF843C500D1AB2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24DA37591EF843C500D1AB2F /* FlexLayout */;
-			targetProxy = 24DA37651EF843C500D1AB2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		24DA376C1EF843C500D1AB2F /* Debug */ = {
@@ -558,7 +520,6 @@
 		};
 		24DA376F1EF843C500D1AB2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 224171C69665A229D0A217EF /* Pods-FlexLayout.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
@@ -587,7 +548,6 @@
 		};
 		24DA37701EF843C500D1AB2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B9A88E410DD5E3EA6C308DD /* Pods-FlexLayout.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
@@ -678,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FC4218E9B7D981F65040348 /* XCRemoteSwiftPackageReference "yoga" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/yoga.git";
+			requirement = {
+				kind = revision;
+				revision = 52f6d0bd3824296b8e852cb4fcdf3b9821ab2aa5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B051DA4A088C49AD5BDE3C70 /* yoga */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FC4218E9B7D981F65040348 /* XCRemoteSwiftPackageReference "yoga" */;
+			productName = yoga;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24DA37511EF843C500D1AB2F /* Project object */;
 }

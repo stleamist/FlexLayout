@@ -7,7 +7,9 @@
 
 import CoreGraphics
 
+#if !COCOAPODS
 import yoga
+#endif
 
 extension Int {
     public static postfix func %(value: Int) -> YGValue {

@@ -13,7 +13,7 @@ let package = Package(
     .library(name: "FlexLayout-Dynamic", type: .dynamic, targets: ["FlexLayout"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/facebook/yoga.git", .upToNextMinor(from: "3.2.1")),
+    .package(url: "https://github.com/facebook/yoga.git", revision: "52f6d0bd3824296b8e852cb4fcdf3b9821ab2aa5"),
   ],
   targets: [
     .target(

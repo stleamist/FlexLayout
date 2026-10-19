@@ -14,7 +14,9 @@
 
 import UIKit
 
+#if !COCOAPODS
 import yoga
+#endif
 
 extension Flex.Direction {
     var yogaValue: YGFlexDirection {

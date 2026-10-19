@@ -78,6 +78,12 @@
       CGFloat, lowercased_name, capitalized_name, property, edge)           \
   YG_EDGE_PROPERTY_SETTER(lowercased_name, capitalized_name, property, edge)
 
+#define YG_GAP_PROPERTY(lowercased_name, capitalized_name, gutter) \
+  -(CGFloat)lowercased_name {                                      \
+    return YGNodeStyleGetGap(self.node, gutter).value;              \
+  }                                                                \
+  YG_EDGE_PROPERTY_SETTER(lowercased_name, capitalized_name, Gap, gutter)
+
 #define YG_VALUE_EDGE_PROPERTY_SETTER(                                       \
     objc_lowercased_name, objc_capitalized_name, c_name, edge)               \
   -(void)set##objc_capitalized_name : (YGValue)objc_lowercased_name {        \
@@ -307,9 +313,9 @@ YG_VALUE_PROPERTY(maxWidth, MaxWidth)
 YG_VALUE_PROPERTY(maxHeight, MaxHeight)
 YG_PROPERTY(CGFloat, aspectRatio, AspectRatio)
 
-YG_EDGE_PROPERTY(columnGap, ColumnGap, Gap, YGGutterColumn)
-YG_EDGE_PROPERTY(rowGap, RowGap, Gap, YGGutterRow)
-YG_EDGE_PROPERTY(gap, Gap, Gap, YGGutterAll)
+YG_GAP_PROPERTY(columnGap, ColumnGap, YGGutterColumn)
+YG_GAP_PROPERTY(rowGap, RowGap, YGGutterRow)
+YG_GAP_PROPERTY(gap, Gap, YGGutterAll)
 
 #pragma mark - Layout and Sizing
 

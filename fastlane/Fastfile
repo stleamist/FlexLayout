@@ -15,7 +15,7 @@ platform :ios do
   before_all do
   end
 
-  DEVICE_NAME = 'iPhone 17'
+  DEVICE_NAME = ENV.fetch('DEVICE_NAME', 'iPhone 17')
   DESTINATION = "platform=iOS Simulator,name=#{DEVICE_NAME}"
 
   lane :install do
